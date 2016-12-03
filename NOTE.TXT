@@ -1,0 +1,65 @@
+﻿-- : OK
+- : not finish
+. : will do after have more info
+.-: will finish after more info
+
+home.php
+--login.php?do=login
+.-register.php          (need redesign: GUI, Ajax, step register, Captcha)
+.-do_register.phpdo=register   (mail)    http://nhatnghe.com/forum/showthread.php?t=60308    mail
+.active.php
+.-use.php          (dieu khoan dich vu)
+.lost_pass.php
+.-help.php?do=buy
+.-help.php?do=sale
+.-feedback.php        Captcha
+--do_feedback.php?do=feedback 
+
+search_result.php
+
+--fashion.php?type=Quan-ao-nam...
+--old.php?type=Quan-ao-nam...
+--exchange.php?type=Quan-ao-nam...
+--detail_product.php?name=NameNone
+
+--personal.php?do=shows&name=NameNone
+--personal.php?do=info&name=NameNone
+--personal.php?do=products&name=NameNone
+
+shows.php?do=
+detail_show.php?name=NameNone
+
+-----------
+back end:
+
+up_products.php
+up_shows.php
+up_comments.php?type=posts/shows/messages...&name=NameNone
+
+// Host: SMTP, PDO
+
+Rating:
+1. Posts <=> 1 PriProducts, n SecProducts:
+- View
+- idHot : BT, HOT, VIP (SP noi bac)
+- Feedbacks.Point : +-
+2. Shows:
+- Comments
+- nStar : 1-5 sao
+- nLike
+3. User:
+- idPackage : Dong, Bac, Vang
+- nPosts
+- nCoin
+- nUp
+- idTypeUser
+
+1 Shows -> 1 show_comment (df) (- content=shows.content) + n show_comment
+
+hao post message admin	->	PriShow -1	idShow 0		idUser 2		idUserTo 1
+admin post message hao	->	PriShow -1	idShow 0		idUser 1		idUserTo 2
+hao post comment		->	PriShow 0	idShow ...	idUser 2		idUserTo 0
+hao post show		->	PriShow 1	idShow ...	idUser 2		idUserTo 0
+
+// tieu de product
+// user : typeuser, nPosts

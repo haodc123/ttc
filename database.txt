@@ -1,0 +1,4 @@
+$myHost = 'localhost';
+$myDB = 'ttc';
+$uname = 'root';
+$upass = 'root';

@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* float clearing for IE6 */
+* html .clearfix{
+  height: 1%;
+  overflow: visible;
+}
+ 
+/* float clearing for IE7 */
+*+html .clearfix{
+  min-height: 1%;
+}
+ 
+	
+	* {margin: 0; padding: 0;}
+	h1, h2, h3, h4, h5, h6
+	{
+	    font-size: 14px;
+	}
+	body
+	{
+	    line-height: 1;
+	}
+	 
+	h1, h2, h3, h4, h5, h6
+	{
+	    font-size: 100%;
+	    padding: 5px 0;
+	    margin: 0 15px;
+	}
+	 
+	ul, ol
+	{
+	    list-style: none;
+	}
+	 
+	img
+	{
+	    border: 0;
+	}
+	a 
+	{
+	    text-decoration: none; 
+	} 
+	   
+	a:hover 
+	{ 
+	    text-decoration: none; 
+	}  
+
+/*       NOTE        */
+
+.clear {
+clear: both;
+}
+
+/* Editing */
+
+body#admin {
+font-family: tahoma;
+font-size: 13px;
+}
+#container {
+width: 100%;
+}
+
+#admin .div_up .ad_img_pro {
+float: left;
+width: 100px;
+height: 90px;
+}
+#admin .ad_img_del {
+float: right;
+width: 100px;
+margin: -42px 180px 20px 0;
+}
+
+#admin #ad_mgr {
+width: 740px;
+}
+#ad_sbr #ad_sr2 {
+float: right;
+width: 210px;
+}
+
+#ad_mgr #note {
+float: right;
+width: 300px;
+}
+
+#ad_mgr #addimg {
+width: 200px;
+}
+
+.fup .fupimg_add {
+float: right;
+margin: 30px 10px 10px 0;
+}
+
+.div_up .add_img {
+float: right;
+height: 30px;
+margin: -35px 20px 0px 10px;
+color:#FF6600;
+font-size: 14px;
+}
